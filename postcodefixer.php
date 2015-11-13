@@ -24,10 +24,6 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
-if (!defined('_PS_VERSION_')) {
-    exit;
-}
-
 class Postcodefixer extends Module
 {
     protected $config_form = false;
@@ -87,8 +83,8 @@ class Postcodefixer extends Module
         }
         if (Configuration::get('PS_DISABLE_NON_NATIVE_MODULE') === '1') {
             $output .= $this->l(
-                    'Non native modules such as this one are disabled. Go to'
-                ).' "'.
+                'Non native modules such as this one are disabled. Go to'
+            ).' "'.
                 $this->getTabName('AdminTools', $lang_id).
                 ' > '.
                 $this->getTabName('AdminPerformance', $lang_id).
