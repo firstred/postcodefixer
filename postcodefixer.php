@@ -82,9 +82,8 @@ class Postcodefixer extends Module
                 '"'.$this->l('.').'<br />';
         }
         if (Configuration::get('PS_DISABLE_NON_NATIVE_MODULE') === '1') {
-            $output .= $this->l(
-                'Non native modules such as this one are disabled. Go to'
-            ).' "'.
+            $output .= $this->l('Non native modules such as this one are disabled. Go to').
+                ' "'.
                 $this->getTabName('AdminTools', $lang_id).
                 ' > '.
                 $this->getTabName('AdminPerformance', $lang_id).
