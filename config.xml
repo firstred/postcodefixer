@@ -2,7 +2,7 @@
 <module>
 	<name>postcodefixer</name>
 	<displayName><![CDATA[Postcode fixer]]></displayName>
-	<version><![CDATA[1.0.0]]></version>
+	<version><![CDATA[1.0.1]]></version>
 	<description><![CDATA[Force postcode format NNNN LL for the Netherlands]]></description>
 	<author><![CDATA[Michael Dekker]]></author>
 	<tab><![CDATA[administration]]></tab>

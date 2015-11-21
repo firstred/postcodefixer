@@ -89,7 +89,8 @@ class AddressController extends AddressControllerCore
             }
         }
         // Check if the alias exists
-        if (!$this->context->customer->is_guest && !empty(Tools::getValue('alias')) &&
+        $alias = Tools::getValue('alias');
+        if (!$this->context->customer->is_guest && !empty($alias) &&
             (int)$this->context->customer->id > 0) {
             $id_address = Tools::getValue('id_address');
             if (Configuration::get('PS_ORDER_PROCESS_TYPE') &&
